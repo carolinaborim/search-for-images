@@ -1,3 +1,4 @@
+import "./ImagesList.css";
 import React from "react";
 
 const ImagesList = props => {
@@ -5,7 +6,7 @@ const ImagesList = props => {
     return <img key={id} alt={description} src={urls.regular} />;
   });
 
-  return <div>{images}</div>;
+  return <div className="images-list">{images}</div>;
 };
 
 export default ImagesList;
